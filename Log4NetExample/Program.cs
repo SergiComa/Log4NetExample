@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+//[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+[assembly: log4net.Config.XmlConfigurator(ConfigFile = "App.config", Watch = true)]
 
 namespace Log4NetExample
 {
@@ -16,6 +17,7 @@ namespace Log4NetExample
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            log.Info("This is an info log");
             log.Error("This is my error");
 
             Console.ReadLine();
