@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//[assembly: log4net.Config.XmlConfigurator(Watch = true)]
 [assembly: log4net.Config.XmlConfigurator(ConfigFile = "App.config", Watch = true)]
 
 namespace Log4NetExample
